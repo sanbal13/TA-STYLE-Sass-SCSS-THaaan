@@ -1,0 +1,350 @@
+html {
+    font-size: $font-size;
+}
+body {
+    font-family: $font-family;
+    line-height: 1.5;
+}
+.container {
+    max-width: $container-width;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.padding {
+    padding: 6rem 0;
+}
+a{
+    text-decoration: none;
+}
+
+p {
+    color: $para-color;
+    font-size: 1.2rem;
+}
+/******************************* Headings ******************************/
+.heading-brand {
+    font-size: 2rem;
+    font-weight: 700;
+    .brand-link {
+    color: $primary;
+    }
+    .black {
+        color: $brand-black;
+    }
+}
+.heading-main, .heading-section {
+    color: $text-color;
+    font-weight: 700;
+}
+.heading-main {
+    font-size: 4rem;    
+    width: 50rem;
+    text-transform: uppercase;
+}
+.heading-section {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.heading-article, .heading-small {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.heading-footer {
+    color: $footer-primary;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* ************** Button ***************************** */
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    display: inline-block;
+    text-transform: capitalize;
+    border: 1px solid $primary;
+}
+.btn-primary {
+    background-color: #fff;
+    color: $primary;
+}
+.btn-primary:hover {
+    background-color: $primary;
+    color: #fff; 
+}
+
+.btn-secondary {
+    background-color: $primary;
+    color: #fff;
+}
+.btn-secondary:hover {
+    background-color: #fff;
+    color: $primary; 
+}
+/* ****************** flex *************************** */
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-start {
+    justify-content: flex-start;
+}
+.item-start {
+    align-self: flex-start;
+}
+.item-end {
+    align-self : flex-end;
+}
+.flex-15 {
+    flex: 0 1 15%;
+}
+.flex-22 {
+    flex: 0 1 22%;
+}
+.flex-30 {
+    flex: 0 1 30%;
+}
+.flex-40 {
+    flex: 0 1 40%;
+}
+.flex-47 {
+    flex: 0 1 47%;
+}
+.flex-58 {
+    flex: 0 1 58%;
+}
+.flex-80 {
+    flex: 0 1 80%;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* **********************Header*********************** */
+header {
+    background-color: $primary;
+    color: white;
+    a {
+        color: white;
+    }
+    .header-top {
+        padding: 1rem 2rem 1rem 1rem;
+    }
+    .phone {
+        margin-right: 1rem;
+    }
+   nav a {
+      margin-left: 1rem; 
+        color: white;
+        font-size: 1.2rem;
+    } 
+    nav a:hover {
+        color: black;
+    }
+    .brand {
+        align-self: center;
+    }
+    .header-main {
+        background-color: $secondary;
+        color: $header-link;
+    }
+    .header-main a {
+        color: $header-link;
+        font-weight: 600;
+        margin-left: 0;
+        letter-spacing: -1px;
+    }
+    .header-main .fas {
+        margin-left: 1rem;
+    }
+}
+.header-main li {
+    height: 5rem;
+    padding: 0 1rem; 
+}
+.header-main li:hover {
+    background-color: $link-active;
+}
+.header-main li:hover .nav-link {
+    color: #fff;
+}
+#toggle, .fa-bars, .close {
+    display: none;
+ } 
+
+/* ********* Hero Section *****************/
+.hero {
+    background-image: $hero-bg-image;
+    background-repeat: no-repeat;   
+    background-position: center; 
+    margin-top: 1rem;
+    padding: 17rem 0;
+    p {
+        margin: 1rem 0;
+        font-weight: 500;
+        color: $text-color;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+}
+/* ********* Services Section *****************/
+.services {
+    header {
+        text-align: center;
+        background-color: #fff;
+        color: $text-color;
+    }
+    article {
+        text-align: center;
+        border: 1px solid #DEE2E6;
+        border-radius: 1rem;
+        padding: 3rem;
+        margin-right: 2rem;
+    }
+    header p {
+        color: $para-color;
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+        font-weight: 200;
+    }
+    article p {
+        margin: 1rem 0 2rem 0;
+        color: $para-color;
+        font-size: 1.2rem;
+    }
+    article img {
+        width: 25%;
+    }
+}
+/* ********* Solution types Section *****************/
+.solution-types {
+    background-color: #F8F9FA;
+    text-align: center;
+    p {
+        width: 60vw;
+        margin: 2rem auto;
+        color: $para-color;
+        font-size: 1.2rem;       
+    }
+    .btn {
+        background-color: #F8F9FA;
+    }
+    .btn:hover {
+        background-color: $primary;
+    }
+}
+/* ********* Top Consulting Section *****************/
+.top-consulting {
+    text-align: center;
+    img {
+    width: 4rem;
+}
+   h2 {
+       text-transform: capitalize;
+       width: 30rem;
+       margin: 2rem auto;
+   }
+ .image img {
+     width: 100%;
+     border-radius: 0.5rem;
+ }
+ p {
+     margin-bottom: 1rem;
+ }
+
+}
+/* *************** Best Consultancy *************** */
+.best-consultancy {
+    color: #fff;
+    p {
+        color: #fff;
+        margin-top: 1rem;
+    }
+    background-color: $primary;
+    .btn {
+        border: 1px solid #fff;
+    }
+    .btn-div {
+        align-items: center;
+    }
+}
+/* *************** Industry Leader *************** */
+.leader {
+     margin-top: 4rem;
+    .heading-section {
+        text-align: left;
+        width: 24rem;
+    }
+    p {
+        width: 30rem;
+    }
+    .bg-img {
+    background-image: url(../media/img-woman-1.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+}
+.sm-screen-img {
+    display: none;
+}
+/* *************** Clients *************** */
+.clients {
+    padding-bottom: 20rem;
+    background: linear-gradient(rgba(242, 243, 245, 0.5) , rgba(242, 243, 245, 0.5)), 
+     15% 60%/7rem url(../media/spotify.png),
+     url(../media/glasfit.png) 30% 60%/8rem,
+     url(../media/atlassian.png) 45% 60%/8rem,
+     url(../media/oracle.png) 60% 60%/8rem,
+     url(../media/airbnb.png) 75% 60%/8rem,
+     url(../media/patio.png) 90% 60%/8rem;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    /* background-size: 10rem; */
+
+    }
+
+/* *************** Footer *************** */
+footer{
+    background-color: $footer;
+    color: $footer-secondary;
+    font-size: 1.2rem;
+    address {
+        display: inline-block;
+    }
+    a {
+        color: $footer-secondary;
+        margin-right: 1rem;
+    }
+    a:hover {
+        color:rgb(235, 229, 229);   
+    }
+    ul {
+        margin-top: 1.5rem;
+    }
+    li {
+        margin-bottom: 1rem;
+    }
+    .theme {
+        color: #E1E2E3;
+    }
+    .theme-info {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+    }
+}
