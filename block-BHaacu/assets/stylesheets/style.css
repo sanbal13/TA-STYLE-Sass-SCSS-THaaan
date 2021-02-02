@@ -1,0 +1,1197 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*************************** Custom Styles begins here ********************/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Archivo", sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.padding {
+  padding: 6rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #8B9298;
+  font-size: 1.2rem;
+}
+
+/******************************* Headings ******************************/
+.heading-brand {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.heading-brand .brand-link {
+  color: #DC4145;
+}
+
+.heading-brand .black {
+  color: #222222;
+}
+
+.heading-main, .heading-section {
+  color: #1B1E24;
+  font-weight: 700;
+}
+
+.heading-main {
+  font-size: 4rem;
+  width: 50rem;
+  text-transform: uppercase;
+}
+
+.heading-section {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.heading-article, .heading-small {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.heading-footer {
+  color: #BDBDBD;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* ************** Button ***************************** */
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  display: inline-block;
+  text-transform: capitalize;
+  border: 1px solid #DC4145;
+}
+
+.btn-primary {
+  background-color: #fff;
+  color: #DC4145;
+}
+
+.btn-primary:hover {
+  background-color: #DC4145;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #DC4145;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #fff;
+  color: #DC4145;
+}
+
+/* ****************** flex *************************** */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.item-start {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.item-end {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.flex-15 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 15%;
+          flex: 0 1 15%;
+}
+
+.flex-22 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 22%;
+          flex: 0 1 22%;
+}
+
+.flex-30 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+}
+
+.flex-40 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+}
+
+.flex-47 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 47%;
+          flex: 0 1 47%;
+}
+
+.flex-58 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 58%;
+          flex: 0 1 58%;
+}
+
+.flex-80 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 80%;
+          flex: 0 1 80%;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* **********************Header*********************** */
+header {
+  background-color: #DC4145;
+  color: white;
+}
+
+header a {
+  color: white;
+}
+
+header .header-top {
+  padding: 1rem 2rem 1rem 1rem;
+}
+
+header .phone {
+  margin-right: 1rem;
+}
+
+header nav a {
+  margin-left: 1rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+header nav a:hover {
+  color: black;
+}
+
+header .brand {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header .header-main {
+  background-color: #F2F2F2;
+  color: #333333;
+}
+
+header .header-main a {
+  color: #333333;
+  font-weight: 600;
+  margin-left: 0;
+  letter-spacing: -1px;
+}
+
+header .header-main .fas {
+  margin-left: 1rem;
+}
+
+.header-main li {
+  height: 5rem;
+  padding: 0 1rem;
+}
+
+.header-main li:hover {
+  background-color: #EB5F61;
+}
+
+.header-main li:hover .nav-link {
+  color: #fff;
+}
+
+#toggle, .fa-bars, .close {
+  display: none;
+}
+
+/* ********* Hero Section *****************/
+.hero {
+  background-image: url(../media/banner-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 1rem;
+  padding: 17rem 0;
+}
+
+.hero p {
+  margin: 1rem 0;
+  font-weight: 500;
+  color: #1B1E24;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+/* ********* Services Section *****************/
+.services header {
+  text-align: center;
+  background-color: #fff;
+  color: #1B1E24;
+}
+
+.services article {
+  text-align: center;
+  border: 1px solid #DEE2E6;
+  border-radius: 1rem;
+  padding: 3rem;
+  margin-right: 2rem;
+}
+
+.services header p {
+  color: #8B9298;
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  font-weight: 200;
+}
+
+.services article p {
+  margin: 1rem 0 2rem 0;
+  color: #8B9298;
+  font-size: 1.2rem;
+}
+
+.services article img {
+  width: 25%;
+}
+
+/* ********* Solution types Section *****************/
+.solution-types {
+  background-color: #F8F9FA;
+  text-align: center;
+}
+
+.solution-types p {
+  width: 60vw;
+  margin: 2rem auto;
+  color: #8B9298;
+  font-size: 1.2rem;
+}
+
+.solution-types .btn {
+  background-color: #F8F9FA;
+}
+
+.solution-types .btn:hover {
+  background-color: #DC4145;
+}
+
+/* ********* Top Consulting Section *****************/
+.top-consulting {
+  text-align: center;
+}
+
+.top-consulting img {
+  width: 4rem;
+}
+
+.top-consulting h2 {
+  text-transform: capitalize;
+  width: 30rem;
+  margin: 2rem auto;
+}
+
+.top-consulting .image img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.top-consulting p {
+  margin-bottom: 1rem;
+}
+
+/* *************** Best Consultancy *************** */
+.best-consultancy {
+  color: #fff;
+  background-color: #DC4145;
+}
+
+.best-consultancy p {
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.best-consultancy .btn {
+  border: 1px solid #fff;
+}
+
+.best-consultancy .btn-div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* *************** Industry Leader *************** */
+.leader {
+  margin-top: 4rem;
+}
+
+.leader .heading-section {
+  text-align: left;
+  width: 24rem;
+}
+
+.leader p {
+  width: 30rem;
+}
+
+.leader .bg-img {
+  background-image: url(../media/img-woman-1.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.sm-screen-img {
+  display: none;
+}
+
+/* *************** Clients *************** */
+.clients {
+  padding-bottom: 20rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 243, 245, 0.5)), to(rgba(242, 243, 245, 0.5))), 15% 60%/7rem url(../media/spotify.png), url(../media/glasfit.png) 30% 60%/8rem, url(../media/atlassian.png) 45% 60%/8rem, url(../media/oracle.png) 60% 60%/8rem, url(../media/airbnb.png) 75% 60%/8rem, url(../media/patio.png) 90% 60%/8rem;
+  background: linear-gradient(rgba(242, 243, 245, 0.5), rgba(242, 243, 245, 0.5)), 15% 60%/7rem url(../media/spotify.png), url(../media/glasfit.png) 30% 60%/8rem, url(../media/atlassian.png) 45% 60%/8rem, url(../media/oracle.png) 60% 60%/8rem, url(../media/airbnb.png) 75% 60%/8rem, url(../media/patio.png) 90% 60%/8rem;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  /* background-size: 10rem; */
+}
+
+/* *************** Footer *************** */
+footer {
+  background-color: #343A40;
+  color: #8E8E8E;
+  font-size: 1.2rem;
+}
+
+footer address {
+  display: inline-block;
+}
+
+footer a {
+  color: #8E8E8E;
+  margin-right: 1rem;
+}
+
+footer a:hover {
+  color: #ebe5e5;
+}
+
+footer ul {
+  margin-top: 1.5rem;
+}
+
+footer li {
+  margin-bottom: 1rem;
+}
+
+footer .theme {
+  color: #E1E2E3;
+}
+
+footer .theme-info {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/************ Sub Menu ***************/
+.sub-menu-box {
+  position: relative;
+}
+
+.sub-menu-box:hover .submenu {
+  display: inline-block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  -webkit-transform: translateX(-32.5%);
+          transform: translateX(-32.5%);
+}
+
+.submenu li {
+  height: 4rem;
+  width: 11rem;
+  padding: 1rem;
+  background-color: #EAEAEA;
+}
+
+.submenu li:hover a {
+  color: #fff;
+}
+
+.blog {
+  -webkit-transform: translateX(-28.3%);
+          transform: translateX(-28.3%);
+}
+
+/********** Pages Hero Section ***********/
+.hero-section {
+  background-color: #DC4145;
+  text-align: center;
+}
+
+.hero-section .heading-main {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.hero-section p {
+  color: #fff;
+}
+
+/* ************ About Page ********************/
+/*************** Headings ****************** */
+.heading-purpose, .heading-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #1B1E24;
+}
+
+.heading-name {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+/*************** Headings Over ****************** */
+.about-strong, .services-strong {
+  color: #DC4145;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.about {
+  /* ***** Leader ***** */
+  /* ***** Purpose ***** */
+  /* ***** Team ***** */
+  /* ***** Solution Types ***** */
+  /* ***** Clients ***** */
+}
+
+.about .leader {
+  margin-top: 0;
+}
+
+.about .bg-img {
+  background-position: left;
+  background-size: 28rem;
+}
+
+.about .leader .heading-section {
+  width: 30rem;
+}
+
+.about img {
+  width: 70%;
+}
+
+.about .purpose i {
+  font-size: 3.5rem;
+  color: #343A40;
+}
+
+.about article, .about .purpose i {
+  margin-bottom: 4rem;
+}
+
+.about .team {
+  background-color: #F8F9FA;
+  text-align: center;
+}
+
+.about .team .heading-section {
+  width: 100%;
+}
+
+.about .team p {
+  color: #1B1E24;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.about .team .col-1-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 22%;
+          flex: 0 1 22%;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 8px 1px #ecebeb;
+          box-shadow: 1px 1px 8px 1px #ecebeb;
+  padding-bottom: 3rem;
+  border-radius: 0.2rem;
+  margin-top: 3rem;
+}
+
+.about .team img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.about .team .designation {
+  color: #DC4145;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.about .about-solution-types {
+  text-align: center;
+}
+
+.about .about-solution-types .btn-secondary {
+  margin-top: 2rem;
+}
+
+.about .about-solution-types p {
+  width: 60rem;
+  margin: 0 auto;
+}
+
+.about .clients {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 243, 245, 0.5)), to(rgba(242, 243, 245, 0.5))), 15% 60%/7rem url(../media/airbnb.png), url(../media/atlassian.png) 30% 60%/8rem, url(../media/debonairs.png) 45% 60%/8rem, url(../media/fitbit.png) 60% 60%/8rem, url(../media/patio.png) 75% 60%/8rem, url(../media/spotify.png) 90% 60%/8rem;
+  background: linear-gradient(rgba(242, 243, 245, 0.5), rgba(242, 243, 245, 0.5)), 15% 60%/7rem url(../media/airbnb.png), url(../media/atlassian.png) 30% 60%/8rem, url(../media/debonairs.png) 45% 60%/8rem, url(../media/fitbit.png) 60% 60%/8rem, url(../media/patio.png) 75% 60%/8rem, url(../media/spotify.png) 90% 60%/8rem;
+  background-repeat: no-repeat;
+}
+
+/* ************ Contact and Error Page ********************/
+/* ****Headings***** */
+.heading-contact-section {
+  margin: 1.5rem 0 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/***** Headings end *****/
+.contact-section .col-1-3 p {
+  color: #1B1E24;
+  font-size: 1.1rem;
+}
+
+.contact-section .col-1-3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 32%;
+          flex: 0 1 32%;
+  margin-top: 4rem;
+}
+
+.contact-section p {
+  text-align: center;
+}
+
+.contact-section .para-contact {
+  width: 60rem;
+  margin: 0 auto;
+}
+
+.contact-section .circle {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #EBEBEB;
+}
+
+.contact-section .circle i {
+  color: #DC4145;
+  font-size: 1.5rem;
+}
+
+.contact .contact-section {
+  background-color: #F8F9FA;
+}
+
+.let-us-know p {
+  width: 50rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.let-us-know iframe {
+  width: 100%;
+  height: 20rem;
+}
+
+.let-us-know input, .let-us-know textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  outline: none;
+  border: none;
+  border: 1px solid #CED4DA;
+  font-size: 1.3rem;
+  color: #8B9298;
+}
+
+.let-us-know textarea {
+  height: 20rem;
+}
+
+.let-us-know .btn {
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+/* *************** Services Page ******************************************** */
+.services-page {
+  /* ***** our services ***** */
+}
+
+.services-page .our-services {
+  margin-top: 0;
+}
+
+.services-page .our-services .heading-section {
+  width: 30rem;
+  text-align: left;
+}
+
+.services-page img {
+  width: 100%;
+}
+
+/* ************ Pricing Page ********************/
+/* Headings */
+.heading-price {
+  font-size: 1.2rem;
+}
+
+/* Headings Over*/
+.plans {
+  background-color: #F8F9FA;
+}
+
+.plans p {
+  text-align: center;
+  width: 60rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.plans .col-1-3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 32%;
+          flex: 0 1 32%;
+  background-color: #fff;
+  padding: 3rem 0;
+  border-radius: 0.2rem;
+  border: 1px solid #DFDFDF;
+  text-align: center;
+}
+
+.plans ul {
+  list-style-type: "- ";
+  list-style-position: inside;
+}
+
+.plans .cost {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.plans .cost::before {
+  content: "$";
+}
+
+.plans .plan-type {
+  color: #6F7880;
+  margin-bottom: 4rem;
+  font-size: 1.3rem;
+}
+
+.plans .btn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.plans .list-contains {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.plans .plan-features li {
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+
+.plans .plan-features {
+  margin-bottom: 0.5rem;
+}
+
+/* *** FAQ *** */
+.faq p {
+  width: 50rem;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.faq-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 49%;
+          flex: 0 1 49%;
+  border: 1px solid #DFDFDF;
+  padding: 1rem 2rem 2rem 1rem;
+  border-radius: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.question {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.answer {
+  color: #8B9298;
+  font-size: 1.2rem;
+}
+
+/* ************ Services  Page ********************/
+/* *** Products *** */
+.products {
+  background-color: #F8F9FA;
+}
+
+.products p {
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  width: 40rem;
+}
+
+.products .col-1-3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 28%;
+          flex: 0 1 28%;
+  padding: 2rem 0;
+}
+
+.products .col-1-3 p {
+  width: auto;
+  color: #1E2127;
+  font-size: 1rem;
+}
+
+.products img {
+  width: 5rem;
+}
+
+.products .top-row {
+  border-bottom: 1px solid #E6E7E9;
+  margin-bottom: 2rem;
+}
+
+.products h4 {
+  margin: 1rem 0 0.5rem 0;
+}
+
+/* Best Deals */
+.best-deals {
+  background-color: #DC4145;
+}
+
+.best-deals .btn {
+  border-color: #fff;
+}
+
+.best-deals p {
+  color: #fff;
+}
+
+.best-deals .deals {
+  font-size: 1.5rem;
+  padding: 0.3rem 1.5rem;
+  border-right: 1px solid #fff;
+  margin-right: 1.5rem;
+  font-weight: 500;
+}
+
+/* Best Awarded */
+.best-awarded p {
+  width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.best-awarded article {
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.best-awarded article img {
+  width: 5rem;
+}
+
+.best-awarded article p {
+  width: 30rem;
+}
+
+.best-awarded h3 {
+  font-weight: 700;
+  font-size: 2.3rem;
+  margin: 3rem 0 2rem 0;
+}
+
+/************************* @ Media Querry ************************/
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 720px;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .sm-align-text-center {
+    text-align: center;
+  }
+  .sm-margin-bottom {
+    margin-bottom: 2rem;
+  }
+  /* ******** Flex ********** */
+  .sm-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sm-flex-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sm-justify-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sm-display-block {
+    display: block;
+  }
+  .sm-align-center {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* ******** Header ********** */
+  header, header i {
+    font-size: 1.2rem;
+  }
+  header i {
+    margin-right: 1rem;
+  }
+  header .phone {
+    margin-right: 0rem;
+  }
+  header .fa-envelope {
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+    vertical-align: bottom;
+  }
+  /* Hamburger */
+  .nav {
+    display: none;
+  }
+  .nav-bar {
+    padding: 1rem;
+    width: 100%;
+  }
+  .fa-bars {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.7rem;
+    background-color: #DC4145;
+    border-radius: 0.2rem;
+    margin-top: 0.2rem;
+    color: #fff;
+    margin-right: 0;
+    position: absolute;
+    right: 2rem;
+  }
+  #toggle:checked ~ .nav {
+    display: inline-block;
+    position: fixed;
+    z-index: 3;
+    background-color: rgba(255, 255, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding-top: 10rem;
+  }
+  #toggle:checked ~ .nav li {
+    margin-bottom: 5rem;
+  }
+  #toggle:checked ~ .nav a {
+    font-size: 2rem;
+    font-weight: 500;
+    color: maroon;
+  }
+  #toggle:checked ~ .nav .sub-menu-box:hover .submenu {
+    top: 0;
+    margin-left: 10rem;
+    z-index: 2;
+  }
+  #toggle:checked ~ .nav .sub-menu-box:hover .submenu li {
+    width: 12rem;
+    background-color: white;
+    margin: 0;
+  }
+  #toggle:checked ~ .brand {
+    position: fixed;
+    z-index: 4;
+    top: 2rem;
+  }
+  #toggle:checked ~ .close {
+    display: inline-block;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    z-index: 4;
+  }
+  #toggle:checked ~ .close i {
+    font-size: 3rem;
+  }
+  #toggle:checked ~ .bars {
+    display: none;
+  }
+  /* ***** Hero ***** */
+  .hero {
+    background-position: 70% top;
+    background-size: cover;
+  }
+  .heading-main {
+    width: 10rem;
+    font-size: 5rem;
+  }
+  /* ***** Services ***** */
+  .services article {
+    margin-right: 0;
+  }
+  /* ***** Best Consultancy ***** */
+  .consultancy .heading-small, .consultancy p, .consultancy .btn {
+    text-align: center;
+  }
+  .best-consultancy .btn-div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* ***** Industry Leader ***** */
+  .leader .bg-img {
+    background-image: none;
+  }
+  .sm-screen-img {
+    display: block;
+  }
+  .sm-screen-img img, .leader p {
+    width: 100%;
+  }
+  /* ***** Client ***** */
+  .clients {
+    padding-bottom: 20rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 243, 245, 0.5)), to(rgba(242, 243, 245, 0.5))), url(../media/fitbit.png) 10% 60%/9rem, url(../media/spotify.png) 53% 60%/9rem, url(../media/glasfit.png) 90% 60%/9rem;
+    background: linear-gradient(rgba(242, 243, 245, 0.5), rgba(242, 243, 245, 0.5)), url(../media/fitbit.png) 10% 60%/9rem, url(../media/spotify.png) 53% 60%/9rem, url(../media/glasfit.png) 90% 60%/9rem;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+  }
+  /* ***** Footer ******/
+  footer .fa-envelope {
+    margin-left: 0;
+  }
+  .margin-right {
+    margin-right: 10rem;
+  }
+  /* ********************** About Us ************************ */
+  .hero-section .heading-main {
+    width: 100%;
+  }
+  /* ***** Solution Types ***** */
+  .about .about-solution-types p {
+    width: 100%;
+  }
+  /* ***** Client ***** */
+  .about .clients {
+    padding-bottom: 20rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 243, 245, 0.5)), to(rgba(242, 243, 245, 0.5))), url(../media/spotify.png) 10% 60%/9rem, url(../media/glasfit.png) 50% 60%/9rem, url(../media/oracle.png) 90% 60%/9rem;
+    background: linear-gradient(rgba(242, 243, 245, 0.5), rgba(242, 243, 245, 0.5)), url(../media/spotify.png) 10% 60%/9rem, url(../media/glasfit.png) 50% 60%/9rem, url(../media/oracle.png) 90% 60%/9rem;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+  }
+  /* ********************** Services ************************ */
+  /* ***** Best Deals ***** */
+  .best-deals .deals {
+    border-right: 0;
+    display: block;
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .best-deals p {
+    text-align: center;
+  }
+  .best-deals .btn {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 2rem;
+  }
+  /* ********************** Pricing ************************ */
+  .plans p, .faq p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  /* ********************** Contact ************************ */
+  .contact-section .para-contact, .let-us-know p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    max-width: 540px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
